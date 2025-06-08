@@ -9,15 +9,16 @@ export const noteSlice = createSlice({
     initialState,
     reducers:{
         addToNotes: (state, actions) =>{
-
         },
         updateToNotes: (state, actions) =>{
-
         },
-        resetNotes: (state, actions) =>{},
+        resetNotes: (state, actions) =>{
+        },
+        removeFromNotes: (state, actions) =>{
+        },
     },
 })
 
-export const { increment} = noteSlice.actions
+export const { addToNotes, updateToNotes, resetNotes, removeFromNotes} = noteSlice.actions
 
-export default noteSlice.reducers
+export default noteSlice.reducer
