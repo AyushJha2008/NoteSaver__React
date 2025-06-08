@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(21, 20, 20);
+    color: white;
+}
+.app-cont{
+    display: flex;
+    justify-content: center;
+}
+.nav-cont{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+.home-cont{
+    display: flex;
+    gap: 10px;
+}
+.home-input{
+    background-color: rgb(69, 63, 63);
+    border-radius: 12px;
+    padding: 5px 1rem;
+    outline: none;
+    border: none;
+}
+.home-btn{
+    background-color: rgb(59, 52, 52);
+    color: white;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+}

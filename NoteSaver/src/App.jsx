@@ -1,33 +1,37 @@
 import React from 'react'
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import ViewNotes from './components/ViewNotes';
+import Note from './components/Note'
+import {createBrowserRouter, RouterProvider} from 'react-router-dom'
 
 const router = createBrowserRouter(
   [
     {path: "/",
-      Element:
+      element:(
       <div>
         <Navbar/>
         <Home/>
-      </div>
+      </div>)
     },
     {path:"/notes",
-      Element: <div>
+      element:( <div>
         <Navbar/>
         <Note/>
-      </div>
+      </div>)
     },
     {path:"/notes/:id",
-      Element: <div>
+      element: <div>
         <Navbar/>
         <ViewNotes />
       </div>
     }
-  ]
-);
+  ]);
 
 const App = () => {
   return (
-    <div className='cont'>
-        {/* navbar */}
+    <div className='app-cont'>
+        <RouterProvider router={router}/>
     </div>
   )
 }
